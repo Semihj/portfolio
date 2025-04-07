@@ -12,13 +12,13 @@ const Socials = (props: Props) => {
 
         </div>
         <div className="flex flex-col gap-3 mt-2">
-            <Link href={"https://github.com/Semihj"} >
+            <Link href={"https://github.com/Semihj"} target="_blank" rel="noopener noreferrer"  >
             <FaGithub/>
             </Link>
-            <Link href={"https://www.instagram.com/sem1hdev/"} >
+            <Link href={"https://www.instagram.com/sem1hdev/"} target="_blank" rel="noopener noreferrer"  >
             <FaInstagramSquare/>
             </Link>
-            <Link href={"https://x.com/semih_devv"} >
+            <Link href={"https://x.com/semih_devv"} target="_blank" rel="noopener noreferrer"  >
             <FaSquareXTwitter/>
             </Link>
         </div>

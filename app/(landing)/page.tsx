@@ -4,6 +4,8 @@ import wp2 from "@/public/wp2.jpg";
 import Home from "./_components/Home";
 import Brightness from "../_components/Brightness";
 import Projects from "./_components/Projects";
+import Skills from "./_components/Skills";
+import AboutMe from "./_components/AboutMe";
 
 
 export default function Page() {
@@ -12,6 +14,8 @@ export default function Page() {
       <Brightness top={0} left={0} color={"white"} position={"fixed"} />
       <Home/>
       <Projects/>
+      <Skills/>
+      <AboutMe/>
     </div>
   );
 }

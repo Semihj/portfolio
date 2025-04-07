@@ -9,7 +9,7 @@ type Props = {}
 
 export default function Home({}: Props) {
   return (
-    <div className=" w-full h-screen lg:h-[70vh] lg:mt-20 flex flex-col lg:flex-row gap-5 lg:justify-between">
+    <div className=" w-full h-screen lg:h-max  lg:mt-20 flex flex-col lg:flex-row gap-5 lg:justify-between ">
     <div className="w-full relative h-max ">
       <p className=" text-2xl lg:text-4xl font-bold capitalize ">
         Building the web,Lets turn your{" "}
@@ -29,7 +29,7 @@ export default function Home({}: Props) {
         className="absolute top-0 left-5 lg:left-10 z-0 w-[300px] lg:w-[300px]  "
         width={300}
         height={300}
-      />{" "}
+      />
       <Image
         src={wp1}
         alt=""

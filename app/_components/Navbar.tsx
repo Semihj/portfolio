@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
-import wp3 from "@/public/wp3.jpg";
+import logo from "@/public/logo.jpg";
 import Image from "next/image";
 
 type Props = {};
@@ -17,7 +17,7 @@ export default function Navbar({}: Props) {
   return (
     <div className="w-full h-20 px-4 lg:px-20 lg:py-4 border-b justify-between items-center flex   ">
       <div className="flex gap-2 items-center"><h1 className="font-bold text-2xl cursor-pointer  ">Semih</h1>
-      <Image src={wp3} alt=""
+      <Image src={logo} alt=""
       className="object-cover"
       width={50}
       height={50}
@@ -114,7 +114,7 @@ export default function Navbar({}: Props) {
                 </div>
               </div>
               <div className="w-full justify-center items-center flex gap-2 text-4xl mt-10">
-                <Link href={"https://github.com/Semihj"}>
+                <Link href={"https://github.com/Semihj"} >
                   <FaGithub />
                 </Link>
                 <Link href={"https://www.instagram.com/sem1hdev/"}>
