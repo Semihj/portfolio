@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser"
 type Props = {};
 
 export default function Contact({}: Props) {
-    const form = useRef<HTMLFormElement>(null);
+    const form = useRef<HTMLFormElement | string >("");
     const handleSubmit = async (e:React.FormEvent) => {
       e.preventDefault()
       emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID!,process.env.NEXT_PUBLIC_TEMPLATE_ID!,form.current,
