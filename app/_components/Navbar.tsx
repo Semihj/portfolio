@@ -15,7 +15,7 @@ export default function Navbar({}: Props) {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="w-full h-20 px-4 lg:px-20 lg:py-4 border-b justify-between items-center flex fixed bg-black z-100   ">
+    <div className="w-full h-20 px-4 lg:px-20 lg:py-4 border-b justify-between items-center flex fixed bg-[#1e1e1e] z-100   ">
       <div className="flex gap-2 items-center"><h1 className="font-bold text-2xl cursor-pointer  ">Semih</h1>
       <Image src={logo} alt=""
       className="object-cover"
