@@ -1,10 +1,12 @@
 import React from "react";
+import wp3 from "@/public/wp3.jpg"
+import Image from "next/image";
 
 type Props = {};
 
 function AboutMe({}: Props) {
   return (
-    <div className="flex flex-col mt-20 w-full">
+    <div id="about_me" className="flex flex-col mt-20 w-full">
       <div className="flex   justify-between gap-5 ">
         <div className="flex items-center gap-2  ">
           <p className="text-2xl lg:text-4xl">
@@ -27,8 +29,14 @@ function AboutMe({}: Props) {
           </span>
         </p>
         </div>
-        <div className="w-full hidden lg:flex">
-            
+        <div className="w-full hidden lg:flex  justify-end">
+            <Image 
+            src={wp3} 
+            alt="" 
+            width={200}
+            height={200}
+            className="w-full max-w-[300px] object-cover  "
+            />
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import Brightness from "../_components/Brightness";
 import Projects from "./_components/Projects";
 import Skills from "./_components/Skills";
 import AboutMe from "./_components/AboutMe";
+import Contact from "./_components/Contact";
 
 
 export default function Page() {
@@ -16,6 +17,7 @@ export default function Page() {
       <Projects/>
       <Skills/>
       <AboutMe/>
+      <Contact/>
     </div>
   );
 }

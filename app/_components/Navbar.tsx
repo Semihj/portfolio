@@ -15,7 +15,7 @@ export default function Navbar({}: Props) {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="w-full h-20 px-4 lg:px-20 lg:py-4 border-b justify-between items-center flex   ">
+    <div className="w-full h-20 px-4 lg:px-20 lg:py-4 border-b justify-between items-center flex fixed bg-black z-100   ">
       <div className="flex gap-2 items-center"><h1 className="font-bold text-2xl cursor-pointer  ">Semih</h1>
       <Image src={logo} alt=""
       className="object-cover"
@@ -32,7 +32,7 @@ export default function Navbar({}: Props) {
           </Link>
         </div>
         <div className="">
-          <Link href={"/projects"} className="text-purple-600 text-xl cursor-pointer">
+          <Link href={"/#projects"} className="text-purple-600 text-xl cursor-pointer">
             #
             <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
               projects
@@ -40,7 +40,7 @@ export default function Navbar({}: Props) {
           </Link>
         </div>
         <div className="">
-          <Link href={"/about_me"} className="text-purple-600 text-xl cursor-pointer">
+          <Link href={"/#about_me"} className="text-purple-600 text-xl cursor-pointer">
             #
             <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
               about_me
@@ -48,7 +48,7 @@ export default function Navbar({}: Props) {
           </Link>
         </div>
         <div className="">
-          <Link href={"/contact"} className="text-purple-600 text-xl cursor-pointer ">
+          <Link href={"/#contact"} className="text-purple-600 text-xl cursor-pointer ">
             #
             <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
               contact
@@ -71,17 +71,17 @@ export default function Navbar({}: Props) {
           {show && (
             <span
               onClick={() => setShow(false)}
-              className="absolute top-0 right-2 text-2xl"
+              className="absolute top-5 right-5 text-2xl"
             >
               X
             </span>
           )}
           {show && (
-            <div className="flex flex-col px-5 py-5 gap-5 w-full h-full">
+            <div className="flex flex-col px-5 py-10  gap-5 w-full h-full">
               <h1 className="text-3xl font-bold">Semih</h1>
               <div className="flex flex-col gap-13">
                 <div className="">
-                  <Link href={"/"}  className="text-purple-600 text-2xl cursor-pointer ">
+                  <Link href={"/"}  className="text-purple-600 text-2xl cursor-pointer " onClick={() => setShow(false) }>
                     #
                     <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
                       home
@@ -89,7 +89,7 @@ export default function Navbar({}: Props) {
                   </Link>
                 </div>
                 <div className="">
-                  <Link href={"/projects"}  className="text-purple-600 text-2xl cursor-pointer">
+                  <Link href={"/#projects"}  className="text-purple-600 text-2xl cursor-pointer" onClick={() => setShow(false) }>
                     #
                     <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
                       projects
@@ -97,7 +97,7 @@ export default function Navbar({}: Props) {
                   </Link>
                 </div>
                 <div className="">
-                  <Link href={"/about-me"}  className="text-purple-600 text-2xl cursor-pointer">
+                  <Link href={"/#about-me"}  className="text-purple-600 text-2xl cursor-pointer" onClick={() => setShow(false) }>
                     #
                     <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
                       about_me
@@ -105,7 +105,7 @@ export default function Navbar({}: Props) {
                   </Link>
                 </div>
                 <div className="">
-                  <Link href={"/contact"} className="text-purple-600 text-2xl cursor-pointer ">
+                  <Link href={"/#contact"} className="text-purple-600 text-2xl cursor-pointer " onClick={() => setShow(false) } >
                     #
                     <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
                       contact

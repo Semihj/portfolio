@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { TiArrowRightOutline } from "react-icons/ti";
 import { MdOutlineFormatQuote } from "react-icons/md";
+import wp2 from "@/public/wp2.jpg"
 import logo from "@/public/logo.jpg"
 import Text from "@/app/_components/Text";
 import Image from "next/image";
@@ -11,7 +12,7 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="flex flex-col mt-20 ">
+    <div id="skills" className="flex flex-col lg:mt-20 mt-10 ">
       <div className="flex   justify-between gap-5 ">
         <div className="flex items-center gap-2  ">
           <p className="text-2xl lg:text-4xl">
@@ -22,6 +23,13 @@ function Skills({}: Props) {
       <div className="w-full flex flex-col lg:flex-row justify-between mt-5">
         <div className="flex flex-col gap-4 w-full relative">
        <Text text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolor."/>
+       <Image 
+       src={wp2}
+       alt=""
+       className="w-full max-h-[400px] object-cover hidden lg:inline-block  "
+       width={200}
+       height={200}
+       />
        <Brightness top={300} left={200} color={"green"} />
        <div className="absolute bottom-0 right-0">
         <Image src={logo} alt="" width={50} height={50} />

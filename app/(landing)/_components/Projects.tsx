@@ -12,7 +12,7 @@ type Props = {};
 
 export default function Projects({}: Props) {
   return (
-    <div className="w-full h-max flex flex-col gap-3 mt-20 lg:mt-40 ">
+    <div id="projects" className="w-full h-max flex flex-col gap-3 mt-20 lg:mt-40 ">
       <div className="flex w-full  justify-between ">
         <div className="flex items-center gap-2  ">
           <p className="text-2xl lg:text-4xl">

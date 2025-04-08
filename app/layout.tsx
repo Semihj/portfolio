@@ -33,7 +33,7 @@ export default function RootLayout({
         <Socials/>
         
         <Navbar/>
-        <div className="lg:px-20 p-5 lg:py-20 transition-all">
+        <div className="lg:px-20 p-5 lg:py-20 transition-all mt-20 ">
         {children}
         </div>
         <Footer/>
