@@ -22,7 +22,7 @@ function Skills({}: Props) {
       </div>
       <div className="w-full flex flex-col lg:flex-row justify-between mt-5">
         <div className="flex flex-col gap-4 w-full relative">
-       <Text text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolor."/>
+       <Text text="Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."/>
        <Image 
        src={wp2}
        alt=""

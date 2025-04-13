@@ -24,7 +24,7 @@ export default function Navbar({}: Props) {
         />
     </div>  <div className="gap-10 mr-10 hidden lg:flex">
         <div className="">
-          <Link href={"/"} className="text-purple-600 text-xl cursor-pointer ">
+          <Link href={"#"} className="text-purple-600 text-xl cursor-pointer ">
             #
             <span className="text-gray-400 hover:text-white hover:scale-125 transition-all">
               home
