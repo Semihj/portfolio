@@ -17,7 +17,7 @@ function AboutMe({}: Props) {
       <div className="flex flex-col lg:flex-row justify-between w-full mt-5">
         <div className="w-full max-w-[400px] ">
         <p className="text-gray-300 text-lg">
-          Hello! I'm Semih, a passionate self-taught front-end developer located
+          Hello! I'm Semih, a passionate self-taught full-stack developer located
           in Türkiye. For the past couple of years, I've been driven by the desire to
           transform my programming skills into functional and
           user-friendly websites.
