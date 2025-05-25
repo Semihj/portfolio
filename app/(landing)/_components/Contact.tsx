@@ -1,25 +1,14 @@
 "use client"
 
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser"
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import Link from "next/link";
+
 type Props = {};
 
 export default function Contact({}: Props) {
-    const form = useRef<HTMLFormElement | string >("");
-    const handleSubmit = async (e:React.FormEvent) => {
-      e.preventDefault()
-      emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID!,process.env.NEXT_PUBLIC_TEMPLATE_ID!,form.current,
-        process.env.NEXT_PUBLIC_KEY!
-      ).then(
-        () => {
-          alert("Email has been sent");
-        },
-        (error) => {
-          alert("Failed")
-          console.log('FAILED...', error.text);
-        },
-      )
-    }
 
   return (
     <div id="contact" className="w-full flex flex-col mt-10 lg:mt-20 " >
@@ -30,19 +19,25 @@ export default function Contact({}: Props) {
           </p>
         </div>
       </div>
-      <div className="w-full flex justify-center mt-5 ">
-        <form ref={form} onSubmit={handleSubmit} className="flex flex-col border rounded-lg border-purple-500 p-5 gap-5  " >
-          <div className="flex gap-2 flex-wrap">
-            <input type="text" name="name" placeholder="Name" required className="p-2 border rounded-md " />
-            <input type="email" name="sender_email" placeholder="Email" required className="p-2 border rounded-md " />
+      <div className="w-full py-5 lg:px-20 flex flex-col lg:flex-row lg:py-10 gap-5 justify-between ">
+          <p className="max-w-lg text-gray-300 leading-7 text-2xl " >I'm open to work and interested in freelance opportunities. Also, if you have a question or request, don't be afraid to contact me. </p>
+          <div className="border p-5 flex flex-col gap-4">
+            <p className="text-2xl font-bold" >Message me here</p>
+            <div className="flex gap-2 items-center">
+              <CiMail size={20} />
+              <p>semihszak@gmail.com</p>
             </div>
-            <input type="text" name="title" placeholder="Title" required className="p-2 border rounded-md  " />
-            <textarea rows={10} cols={10} name="message" placeholder="Message" required className="resize-none border rounded-md p-2" />
-            <div className="w-full flex justify-center ">
-              <button className="bg-green-700 p-2 px-6 font-semibold rounded-md cursor-pointer" >Send</button>
-            </div>
-        </form>
+            <Link href={"https://www.instagram.com/sem1hdev/"} className="flex gap-2 items-center">
+              <FaInstagramSquare size={20} />
+              <p>semihj</p>
+            </Link>
+            <Link href={"https://www.linkedin.com/in/semih-sazak-329b88291"} className="flex gap-2 items-center">
+              <FaLinkedin size={20} />
+              <p>semih sazak</p>
+            </Link>
+          </div>
       </div>
+     
     </div>
   );
 }

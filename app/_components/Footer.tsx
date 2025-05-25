@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 type Props = {};
 
 function Footer({}: Props) {
@@ -15,9 +16,8 @@ function Footer({}: Props) {
           <div className="flex gap-2 items-center">
             <Image src={logo} alt="" width={50} height={50} />
             <p className="text-lg">Semih</p>
-            <p className="text-gray-400 ml-5">semihszak@gmail.com</p>
           </div>
-          <p className="lg:pl-2">FullStack Web Developer</p>
+          <p className="lg:pl-2  my-5">FullStack Web Developer</p>
         </div>
         <div className="flex flex-col">
           <h1 className="text-lg font-semibold">Media</h1>
@@ -42,6 +42,13 @@ function Footer({}: Props) {
               rel="noopener noreferrer"
             >
               <FaSquareXTwitter />
+            </Link>
+            <Link
+              href={"https://x.com/semih_devv"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
             </Link>
           </div>
         </div>

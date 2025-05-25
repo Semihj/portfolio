@@ -31,6 +31,7 @@ export default function Home({}: Props) {
         className=" w-[200px] lg:w-[500px] "
         width={300}
         height={300}
+        priority
       />
     
     </div>

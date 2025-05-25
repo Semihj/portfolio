@@ -34,6 +34,7 @@ function AboutMe({}: Props) {
             src={wp3} 
             alt="" 
             width={200}
+            priority
             height={200}
             className="w-full max-w-[300px] object-cover  "
             />

@@ -16,13 +16,13 @@ export default function Navbar({}: Props) {
 
   return (
     <div className="w-full h-20 px-4 lg:px-20 lg:py-4 border-b justify-between items-center flex fixed bg-[#1e1e1e] z-100   ">
-      <div className="flex gap-2 items-center"><h1 className="font-bold text-2xl cursor-pointer  ">Semih</h1>
+      <Link href={"/"} className="flex gap-2 items-center"><h1 className="font-bold text-2xl cursor-pointer  ">Semih</h1>
       <Image src={logo} alt=""
       className="object-cover"
       width={50}
       height={50}
         />
-    </div>  <div className="gap-10 mr-10 hidden lg:flex">
+    </Link>  <div className="gap-10 mr-10 hidden lg:flex">
         <div className="">
           <Link href={"#"} className="text-purple-600 text-xl cursor-pointer ">
             #
