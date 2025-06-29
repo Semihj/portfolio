@@ -6,6 +6,7 @@ import project5 from "@/public/project5.png";
 import project6 from "@/public/project6.png";
 import project7 from "@/public/project7.png";
 import project8 from "@/public/project8.png";
+import project9 from "@/public/project9.png"
 import { FaFigma } from "react-icons/fa";
 import Image from "next/image";
 import logo from "@/public/logo.jpg";
@@ -201,7 +202,7 @@ export default function page({}: Props) {
           <span className="text-purple-600">/</span>design to code
         </p>
       </div>
-       <div className="flex flex-col lg:flex-row lg:flex-wrap lg:w-max  lg:p-2 py-5 mt-10  gap-10 justify-between ">
+       <div className="flex flex-col lg:flex-row lg:flex-wrap lg:max-w-screen  lg:p-2 py-5 mt-10  gap-10  ">
         <div className="flex flex-col max-w-sm ">
           <div className="border-slate-300 border flex flex-col h-max ">
             <div className="border-y border-slate-300 h-[200px] w-full relative ">
@@ -397,9 +398,137 @@ export default function page({}: Props) {
             </div>
           </div>
         </div>
-     
+        <div className="flex flex-col max-w-sm ">
+          <div className="border-slate-300 border flex flex-col h-max ">
+            <div className="border-y border-slate-300 h-[200px] w-full relative ">
+              <Image
+                src={project9}
+                alt=""
+                fill
+                className="object-cover cursor-pointer hover:brightness-75 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex flex-wrap gap-3 text-gray-400 px-4 text-2xl border-b py-2">
+              <span className="hover:text-white transition-all duration-200 cursor-pointer">
+                TypeScript
+              </span>
+              
+              <span className="hover:text-white transition-all duration-200 cursor-pointer text-purple-600 ">
+                Redux
+              </span>
+             
+              <span className="hover:text-white transition-all duration-200 cursor-pointer text-sky-500 ">
+                ReactJS
+              </span>
+              <span className="hover:text-white transition-all duration-200 cursor-pointer text-red-500 ">
+                TailwindCSS
+              </span>
+              <span className="hover:text-white transition-all duration-200 cursor-pointer text-yellow-500 ">
+                react-leaflet
+              </span>
+            </div>
+            <div className="flex flex-col px-4 py-2 border-y text-gray-300">
+              <h1 className="text-xl">AirBnb Clone</h1>
+              <p className="capitalize text-lg">AirBnb Clone Made with ReactJS</p>
+            </div>
+            <div className="flex flex-wrap gap-2 lg:gap-5 p-4 ">
+              <Link
+                href={"https://a1rb1b-clone.vercel.app/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-max px-4 py-2 border text-2xl font-bold flex items-center gap-2 hover:bg-white hover:text-black duration-300 transition-all "
+              >
+                Live
+                <Image
+                  src={logo}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="object-cover  "
+                />
+              </Link>
+              <Link
+                href={"https://github.com/Semihj/airbnb-clone"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" w-max px-4 py-2 border text-2xl font-bold flex items-center gap-2 hover:bg-white hover:text-black duration-300 transition-all "
+              >
+                Github
+                <FaGithub />
+              </Link>
+           
+            </div>
+          </div>
+        </div>
+
+      
+      
       
         
+      </div>
+
+        <div className="mt-10">
+        <p className="text-4xl">
+          <span className="text-purple-600">/</span>small apps
+        </p>
+      </div>
+      <div className="flex flex-col lg:flex-row lg:flex-wrap lg:max-w-screen  lg:p-2 py-5 mt-10  gap-10">
+         <div className="flex flex-col max-w-sm ">
+          <div className="border-slate-300 border flex flex-col h-max ">
+            <div className="border-y border-slate-300 h-[200px] w-full relative ">
+              <Image
+                src={project8}
+                alt=""
+                fill
+                className="object-cover cursor-pointer hover:brightness-75 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex flex-wrap gap-3 text-gray-400 px-4 text-2xl border-b py-2">
+              <span className="hover:text-white transition-all duration-200 cursor-pointer">
+                Flask
+              </span>
+              <span className="hover:text-white transition-all duration-200 cursor-pointer text-purple-600 ">
+                SocketIO
+              </span>
+              <span className="hover:text-white transition-all duration-200 cursor-pointer text-sky-800 ">
+                NextJS
+              </span>
+       
+            </div>
+            <div className="flex flex-col px-4 py-2 border-y text-gray-300">
+              <h1 className="text-xl">Real Time Chat App</h1>
+            </div>
+            <div className="flex flex-wrap gap-2 lg:gap-5 p-4 ">
+              <Link
+                href={"https://chat-semih.vercel.app/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-max px-4 py-2 border text-2xl font-bold flex items-center gap-2 hover:bg-white hover:text-black duration-300 transition-all "
+              >
+                Live
+                <Image
+                  src={logo}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="object-cover  "
+                />
+              </Link>
+              <Link
+                href={"https://github.com/Semihj/flask-chat"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" w-max px-4 py-2 border text-2xl font-bold flex items-center gap-2 hover:bg-white hover:text-black duration-300 transition-all "
+              >
+                Github
+                <FaGithub />
+              </Link>
+           
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

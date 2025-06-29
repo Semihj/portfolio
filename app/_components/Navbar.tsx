@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import logo from "@/public/logo.jpg";
 import Image from "next/image";
@@ -120,9 +119,7 @@ export default function Navbar({}: Props) {
                 <Link href={"https://www.instagram.com/sem1hdev/"}>
                   <FaInstagramSquare />
                 </Link>
-                <Link href={"https://x.com/semih_devv"}>
-                  <FaSquareXTwitter />
-                </Link>
+                
               </div>
             </div>
           )}

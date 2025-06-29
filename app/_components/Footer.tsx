@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 type Props = {};
 
@@ -36,15 +35,9 @@ function Footer({}: Props) {
             >
               <FaInstagramSquare />
             </Link>
+         
             <Link
-              href={"https://x.com/semih_devv"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaSquareXTwitter />
-            </Link>
-            <Link
-              href={"https://x.com/semih_devv"}
+              href={"https://www.linkedin.com/in/semih-sazak-329b88291"}
               target="_blank"
               rel="noopener noreferrer"
             >
